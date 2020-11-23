@@ -1,0 +1,47 @@
+.ext-pos-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ext-bgi {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ext-has-pseudo {
+    position: relative;
+    &::before, 
+    &::after {
+        content: "";
+        display: block;  
+        position: absolute;
+    }
+}
+
+.ext-has-pseudo-center {
+    @extend .ext-has-pseudo;
+    &::before, 
+    &::after {
+        @extend .ext-pos-center;
+    }
+}
+
+.ext-has-pseudo-bgi {
+    @extend .ext-has-pseudo;
+    &::before, 
+    &::after {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
+
+.ext-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

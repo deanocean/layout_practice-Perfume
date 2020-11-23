@@ -1,0 +1,54 @@
+
+/* ---------- layout ---------- */
+
+
+
+/* ---------- font ---------- */
+.fz-small {
+    font-size: $fz-small;    
+}
+
+.fz-base {
+    font-size: $fz-base;    
+}
+
+.fz-large {
+    font-size: $fz-large;    
+}
+
+.f-style-normal {
+    font-style: normal;
+}
+
+
+/* ---------- color ---------- */
+
+
+
+/* ---------- background ---------- */
+
+
+
+/* ---------- display ---------- */
+
+
+
+/* ---------- others ---------- */
+.mobile-only {
+    display: none;
+    @include mobile {
+        display: initial;
+    }
+}
+
+.pc-pad-only {
+    @include mobile {
+        display: none;
+    }
+}
+
+.pc-only {
+    @include pad {
+        display: none;
+    }
+}

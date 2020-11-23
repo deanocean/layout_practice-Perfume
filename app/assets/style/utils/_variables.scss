@@ -1,0 +1,45 @@
+// $color-main-dark: #650300;
+// $color-main: #AA0601;
+// $color-main-light: #AA06010D;
+// $color-main-light: #FBF2F2;
+
+// $color-white: #fff;
+// $color-grey: #707070;
+// $color-lightGrey: #DCDCDC;
+// $color-dark: #212529;
+// $color-darker: #111619;
+// $color-black: #000;
+// $color-brown: #5F3E2D;
+// $color-orange: #B75929;
+
+$fz-display-1: 72px;
+$fz-display-2: 64px;
+$fz-display-3: 48px;
+$fz-display-4: 42px;
+$fz-display-5: 36px;
+$fz-giant: 32px;
+$fz-xlarge: 28px;
+$fz-large: 24px;
+$fz-medium: 20px;
+$fz-medium-2: 18px;
+$fz-base: 16px;
+$fz-small: 14px;
+
+$fw-black: 900; 
+$fw-bold: 700; 
+$fw-medium: 500; 
+$fw-regular: 400;
+// $fw-light: 300;
+
+
+/* ---------- layout ---------- */
+// $container: 1110px;
+// $gutter: 30px;
+
+
+/* ---------- distance ---------- */
+$distance: 4px;
+@function distance($i) {
+    @return $distance * $i;
+}
+// Example: margin: distance(10); -> 40px

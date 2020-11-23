@@ -1,0 +1,53 @@
+@mixin pad {
+  @media(max-width: 1025px){
+      @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width: 767px){
+      @content;
+  }
+}
+
+// @mixin desktop{
+//   @media(max-width: 1280px){
+//       @content;
+//   }
+// }
+
+// @mixin desktop-top{
+//   @media(max-width: 1023px){
+//       @content;
+//   }
+// }
+
+// @mixin desktop-below{
+//   @media(max-width: 1024px){
+//       @content;
+//   }
+// }
+
+// @mixin pad{
+//   @media(max-width: 767px){
+//       @content;
+//   }
+// }
+
+// @mixin iphone{  // iphone 橫式
+//   @media(max-width: 568px){
+//       @content;
+//   }
+// }
+
+// @mixin mobile480{
+//   @media(max-width: 480px){
+//       @content;
+//   }
+// }
+
+// @mixin iphone5{
+//   @media(max-width: 320px){
+//       @content;
+//   }
+// }

@@ -1,0 +1,44 @@
+$gutter-width: 30px;
+$grid-num: 12;
+
+.row{
+  display:flex;
+  margin-left: -1 * ( $gutter-width / 2 );
+  margin-right: -1 * ( $gutter-width / 2 );
+  flex-wrap:wrap;
+}
+
+%col{
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+}
+
+@for $i from 1 through $grid-num{
+  .col-#{$i}{
+    @extend %col;
+    width: 100% * ( $i / $grid-num );  
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+@for $i from 1 through $grid-num{
+  @include pad {
+    .col-md-#{$i}{
+      padding-left: $gutter-width / 2;
+      padding-right: $gutter-width / 2;
+      width: 100% * ( $i / $grid-num );  
+    }
+  }
+}
+
+@for $i from 1 through $grid-num{
+  @include mobile {
+    .col-sm-#{$i}{
+      padding-left: $gutter-width / 2;
+      padding-right: $gutter-width / 2;
+      width: 100% * ( $i / $grid-num );  
+    }
+  }
+}

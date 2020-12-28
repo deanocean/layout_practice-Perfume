@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登入</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    /* Material Icons     */
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+        src: local('Material Icons'),
+          local('MaterialIcons-Regular'),
+          url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+          url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+          url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+      }
+
+  </style>
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+  <header class="header container">
+    <nav class="navbar navbar-expand-lg text-secondary p-0 fz-l">
+      <h1 class="navbar-brand mr-auto ext-bgi ext-text-hide" href="#">
+        香水電商
+      </h1>
+      <a class="d-md-none text-reset p-0 position-relative" href="#">
+        <span class="material-icons align-middle fz-inherit mb-1 mr-1">shopping_cart</span>
+        <span class="badge badge-primary fz-xxs position-absolute">3</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarHeader">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-reset p-0 ml-8 active" href="#">
+            <span class="material-icons align-middle fz-inherit mb-1 mr-1">store</span>Product <span class="sr-only">(current)</span>
+          </a>
+          <a class="nav-item nav-link text-reset p-0 ml-8" href="login.html">
+            <span class="material-icons align-middle fz-inherit mb-1 mr-1">person</span>Log in
+          </a>
+          <a class="nav-item nav-link text-reset p-0 ml-8" href="#">
+            <span class="material-icons align-middle fz-inherit mb-1 mr-1">favorite</span>Wishlist
+          </a>
+          <a class="nav-item nav-link text-reset p-0 ml-8" href="#">
+            <span class="material-icons align-middle fz-inherit mb-1 mr-1">shopping_cart</span>Cart(3)
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+<div class="bg-primary d-none d-md-block">
+  <ul class="nav container">
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">CHANEL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Jo Malone</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Curology</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Dior</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Chloe</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">ZARA</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container py-md-20 pt-10 pb-20">
+  <div class="row">
+    <div class="col-md-8 col-12">
+      <img src="assets/images/login.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-12 d-flex flex-column justify-content-center mt-7 mt-md-0">
+      <h2 class="fz-32 mb-3">Log in</h2>
+      <form>
+        <div class="form-group mb-5">
+          <label for="exampleInputEmail1" class="mb-1">帳號</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com">
+        </div>
+        <div class="form-group mb-md-9 mb-11">
+          <label for="exampleInputPassword1" class="mb-1">密碼</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="btnWrap d-flex justify-content-between">
+          <button type="button" class="btn btn-link text-gold px-0">忘記密碼</button>
+          <div>
+            <button type="button" class="btn btn-outline-primary">註冊</button>
+            <button type="submit" class="btn btn-primary">登入</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  
+
+  <footer class="footer bg-primary d-flex align-items-center">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg text-white p-0 fz-l">
+        <a class="navbar-brand mr-auto" href="#">
+          <img src="assets/images/d’Perfume@2x.png" width="128" height="38" class="logo d-inline-block align-top" alt="香水電商 LOGO">
+        </a>
+        <span class="navbar-text ml-5 fz-xs">
+          © 2020. All Rights Reserved.
+        </span>
+        <div class="collapse navbar-collapse justify-content-end">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link text-reset p-0 ml-9" href="#">
+              Product
+            </a>
+            <a class="nav-item nav-link text-reset p-0 ml-9" href="#">
+              Blog
+            </a>
+            <a class="nav-item nav-link text-reset p-0 ml-9" href="#">
+              Contact
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </footer>
+  <!-- <script src="./assets/js/vendors.js"></script> -->
+  <!-- <script src="./assets/js/all.js"></script> -->
+</body>
+
+</html>

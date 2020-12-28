@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 * Bootstrap v4.5.3 (https://getbootstrap.com/)
 * Copyright 2011-2020 The Bootstrap Authors
@@ -12993,6 +12994,11 @@ a.text-white:hover, a.text-white:focus {
       -ms-flex-align: center;
           align-items: center; }
 
+.ext-text-hide {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
 /* ---------- layout ---------- */
 /* ---------- font size ---------- */
 .fz-5xl {
@@ -13302,6 +13308,11 @@ ul, ol, li {
     height: 18px;
     line-height: 18px;
     padding: 0; }
+
+h1 {
+  background-image: url(../images/d’Perfume.png);
+  width: 129px;
+  height: 38px; }
 
 .footer {
   height: 80px; }

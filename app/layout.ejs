@@ -44,7 +44,7 @@
           <a class="nav-item nav-link text-reset p-0 ml-8 active" href="#">
             <span class="material-icons align-middle fz-inherit mb-1 mr-1">store</span>Product <span class="sr-only">(current)</span>
           </a>
-          <a class="nav-item nav-link text-reset p-0 ml-8" href="#">
+          <a class="nav-item nav-link text-reset p-0 ml-8" href="login.html">
             <span class="material-icons align-middle fz-inherit mb-1 mr-1">person</span>Log in
           </a>
           <a class="nav-item nav-link text-reset p-0 ml-8" href="#">
@@ -60,6 +60,7 @@
 
   <%- contents %>
 
+  <% if (current != 'login') { %>
   <div class="subscribe jumbotron jumbotron-fluid mb-0 ext-bgi" style="background-image: url(assets/images/index10.jpg)">
     <div class="container h-100">
       <div class="row h-100 align-items-end">
@@ -75,6 +76,7 @@
       </div>
     </div>
   </div>
+  <% } %>
 
   <footer class="footer bg-primary d-flex align-items-center">
     <div class="container">

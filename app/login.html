@@ -1,0 +1,57 @@
+---
+title: 登入
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+<div class="bg-primary d-none d-md-block">
+  <ul class="nav container">
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">CHANEL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Jo Malone</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Curology</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Dior</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">Chloe</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white fz-20 p-3-4" href="#">ZARA</a>
+    </li>
+  </ul>
+</div>
+
+<div class="container py-md-20 pt-10 pb-20">
+  <div class="row">
+    <div class="col-md-8 col-12">
+      <img src="assets/images/login.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-12 d-flex flex-column justify-content-center mt-7 mt-md-0">
+      <h2 class="fz-32 mb-3">Log in</h2>
+      <form>
+        <div class="form-group mb-5">
+          <label for="exampleInputEmail1" class="mb-1">帳號</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com">
+        </div>
+        <div class="form-group mb-md-9 mb-11">
+          <label for="exampleInputPassword1" class="mb-1">密碼</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="btnWrap d-flex justify-content-between">
+          <button type="button" class="btn btn-link text-gold px-0">忘記密碼</button>
+          <div>
+            <button type="button" class="btn btn-outline-primary">註冊</button>
+            <button type="submit" class="btn btn-primary">登入</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -3,21 +3,15 @@
 
 
 
-/* ---------- font ---------- */
-.fz-small {
-    font-size: $fz-small;    
-}
+/* ---------- font size ---------- */
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-.fz-base {
-    font-size: $fz-base;    
-}
-
-.fz-large {
-    font-size: $fz-large;    
-}
-
-.f-style-normal {
-    font-style: normal;
+        @each $prop, $size in $font-sizes {
+            .fz#{$infix}-#{$prop} { font-size: $size !important; }
+        }
+    }
 }
 
 
@@ -35,20 +29,28 @@
 
 /* ---------- others ---------- */
 .mobile-only {
-    display: none;
+    display: none !important;
     @include mobile {
-        display: initial;
+        display: initial !important;
     }
 }
 
 .pc-pad-only {
     @include mobile {
-        display: none;
+        display: none !important;
     }
 }
 
 .pc-only {
     @include pad {
-        display: none;
+        display: none !important;
     }
+}
+
+.lh-15 {
+    line-height: 1.5 !important;
+}
+
+.filter__brightness--dark{
+    filter: brightness(0.7);
 }

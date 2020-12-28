@@ -1,0 +1,33 @@
+$theme-colors: (
+    "primary":    #916019, 
+    "secondary":  #8D8D8D, 
+    "light":      #E0E0E0,
+
+    "gold":       #AC8A46,
+    "gray-1":     #818A91,
+    "gray-2":     #A5A5A5,
+    "gray-3":     #707070,
+    "white":      #FFFFFF,
+);
+
+$spacer: 4px;
+$spacers: (
+    "1": ($spacer * 1),
+    "2": ($spacer * 2),
+    "3": ($spacer * 3),
+    "3-4": ($spacer * 3.5),
+    "4": ($spacer * 4),
+    "4-5": ($spacer * 4.5),
+    "5": ($spacer * 5),
+    "6": ($spacer * 6),
+    "7": ($spacer * 7),
+    "8": ($spacer * 8),
+    "9": ($spacer * 9),
+    "10": ($spacer * 10),
+    "11": ($spacer * 11),
+    "12": ($spacer * 12),
+    "13": ($spacer * 13),
+    "14": ($spacer * 14),
+    "15": ($spacer * 15),
+    "20": ($spacer * 20),
+);

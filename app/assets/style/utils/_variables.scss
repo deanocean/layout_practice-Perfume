@@ -12,24 +12,40 @@
 // $color-brown: #5F3E2D;
 // $color-orange: #B75929;
 
-$fz-display-1: 72px;
-$fz-display-2: 64px;
-$fz-display-3: 48px;
-$fz-display-4: 42px;
-$fz-display-5: 36px;
-$fz-giant: 32px;
-$fz-xlarge: 28px;
-$fz-large: 24px;
-$fz-medium: 20px;
-$fz-medium-2: 18px;
-$fz-base: 16px;
-$fz-small: 14px;
+$font-sizes: () !default;
+$font-sizes: map-merge(
+  (        
+    "5xl": 40px,
+    "4xl": 36px,
+    "3xl": 32px,
+    "xxl": 28px,
+    "xl":  24px,
+    "l":   20px,
+    "m":   18px,
+    "s":   16px,
+    "xs":  14px,
+    "xxs": 12px,
+    "inherit": inherit,
+    "40": 40px,
+    "36": 36px,
+    "32": 32px,
+    "28": 28px,
+    "24":  24px,
+    "20":   20px,
+    "18":   18px,
+    "16":   16px,
+    "14":  14px,
+    "12": 12px,
+  ),
+  $font-sizes
+);
+// 14 16 20 24 28 32 40
 
 $fw-black: 900; 
 $fw-bold: 700; 
 $fw-medium: 500; 
 $fw-regular: 400;
-// $fw-light: 300;
+$fw-light: 300;
 
 
 /* ---------- layout ---------- */

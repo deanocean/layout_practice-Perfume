@@ -1,0 +1,33 @@
+.heroheader {
+  height: 870px;
+  @include pad {
+    height: 480px;
+  }
+  .btn {
+    border-width: 2px;
+    height: 60px;
+    &:hover {
+      color: inherit;
+      background-color: #FFFFFF4D;
+    }
+  }
+}
+
+.intro {
+  .rectangular {
+    padding-top: 50%;
+  }
+  .btn {
+    border-width: 2px;
+    &:hover {
+      color: inherit;
+      background-color: #0000000D;
+    }
+  }
+}
+
+.product {
+  .soldout {
+
+  }
+}

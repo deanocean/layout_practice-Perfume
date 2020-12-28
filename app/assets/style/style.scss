@@ -1,14 +1,12 @@
-
-
+@import "vendor/bootstrap-variables-custom";
+@import "vendor/bootstrap";
 
 @import "utils/variables";
-// @import "utils/breakpoint";
+@import "utils/breakpoint";
 // @import "utils/grid";
 @import "utils/extend";
 @import "utils/utilities";
 @import "utils/mixins";
-
-@import "vendor/bootstrap";
 
 // @import "base/reset";
 @import "base/base";
@@ -17,6 +15,7 @@
 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/subscribe";
 @import "layout/page";
 
 @import "pages/index";

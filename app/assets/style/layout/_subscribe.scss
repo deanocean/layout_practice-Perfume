@@ -1,0 +1,15 @@
+.subscribe {
+  height: 600px;
+  @include pad {
+    padding-bottom: 112px;
+  }
+  .input-group * {
+    height: 60px;
+  }
+  .form-control {
+    border-width: 2px;
+  }
+  .btn {
+    width: 130px;
+  }
+}
